@@ -1,8 +1,5 @@
-import java.util.Scanner;
 public class Reduce {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+    public static int main(int n) {
         int count = 0;
         while (n > 0) {
             if (n % 2 == 0) {
@@ -12,7 +9,6 @@ public class Reduce {
             }
             count++;
         }
-        System.out.println(count);
-        scanner.close();
+        return count;
     }
 }
